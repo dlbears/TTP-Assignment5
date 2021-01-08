@@ -1,5 +1,6 @@
 
 const selectedColor = document.querySelector('#colorSelected'),
+      row = document.querySelector('#columns'),
       cell = document.querySelector('.cell')
 
 let isDown = false,
