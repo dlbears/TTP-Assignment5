@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+    .cell {
+        width: 1em;
+        height: 1em;
+        border-color: black;
+        border-width: 0px;
+        border: solid;
+        background-color: white;
+    }
+
+    #columns {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+</style>
+</head>
+<body onmouseup="mouseUp()">
+<div class="header">
+    <button onclick="addColumn()">Add Column</button>
+    <button onclick="removeColumn()">Remove Column</button>
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="removeRow()">Remove Row</button>
+    <button onclick="fillAllUncolored()">Fill All Uncolored</button>
+    <button onclick="fillAll()">Fill All</button>
+    <button onclick="clearAll()">Clear All</button>
+    <select id="selectColor"> 
+        <option value="">Color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <p id="colorSelected"></p>
+</div>
+<section id="container" >
+<div id="columns">
+    <div class="row"> 
+        <div class="cell" id="cell00"></div>
+    </div>
+</div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
